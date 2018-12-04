@@ -6,11 +6,11 @@ _______________________________
 (      muCCS - version 2.0      )
 ( by Simonetto, Perfetti, Qorri )
 -------------------------------
-			 o   ^__^
-				o  (oo)\_______
-					 (__)\       )\/
-							 ||----w |
-							 ||     ||
+       o   ^__^
+        o  (oo)\_______
+           (__)\       )\/
+               ||----w |
+               ||     ||
 ```
 
 This assignment is an effort to develop a program using a programming language
