@@ -1,0 +1,4 @@
+agent User = ~p.enter.exit.~v.User
+agent Sem = p.v.Sem
+
+graphlts (User|Sem|User)\{p,v} ; mutex.svg

@@ -1,0 +1,11 @@
+agent S0 = coin1.S1 + coin2.S2
+agent S1 = coin1.S2 + coin2.S3 + tea.S0
+agent S2 = coin1.S3 + coin2.S4 + tea.B1 + coffee.S0
+agent S3 = coin1.S4 + tea.B2 + coffee.B1
+agent S4 = tea.B3 + coffee.B2
+agent B1 = change1.S0
+agent B2 = change2.S0
+agent B3 = change3.S0
+
+graphlts S0 ; bm.svg
+

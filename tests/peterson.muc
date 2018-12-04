@@ -1,0 +1,21 @@
+agent B1f = ~b1rf.B1f + b1wf.B1f + b1wt.B1t
+agent B1t = ~b1rt.B1t + b1wf.B1f + b1wt.B1t
+
+agent B2f = ~b2rf.B2f + b2wf.B2f + b2wt.B2t
+agent B2t = ~b2rt.B2t + b2wf.B2f + b2wt.B2t
+
+agent K1 = ~kr1.K1 + kw1.K1 + kw2.K2
+agent K2 = ~kr2.K2 + kw1.K1 + kw2.K2
+
+agent P1 = ~b1wt.~kw2.P11
+agent P11 = b2rf.P12 + b2rt.(kr1.P12 + kr2.P11)
+agent P12 = enter1.exit1.~b1wf.P1
+
+agent P2 = ~b2wt.~kw1.P21
+agent P21 = b1rf.P22 + b1rt.(kr1.P21 + kr2.P22)
+agent P22 = enter2.exit2.~b2wf.P2
+
+agent Peterson = (P1|P2|B1f|B2f|K1)\{b1rf,b1rt,b1wf,b1wt,b2rf,b2rt,b2wf,b2wt,kr1,kr2,kw1,kw2}
+
+graphlts Peterson ; peterson.svg
+

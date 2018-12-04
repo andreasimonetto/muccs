@@ -1,0 +1,8 @@
+agent VM = coin50.VM50 + coin1.VM1
+agent VM50 = coin50.VM1 + coin1.VM150 + ~coffee.VM
+agent VM1 = coin50.VM150 + coin1.VM2 + ~coffee.VM50 + ~tea.VM
+agent VM150 = coin50.VM2 + ~coffee.VM1 + ~tea.VM50
+agent VM2 = ~coffee.VM150 + ~tea.VM1
+
+graphlts VM ; vm.svg
+
